@@ -17,10 +17,10 @@ const LED_TOPIC = `/ESP/LED`;
 // Create a MQTT Client
 const mqtt = require('mqtt');
 // Create a client connection to CloudMQTT for live data
-const client = mqtt.connect('mqtt://m16.cloudmqtt.com', {
-  username: 'benzintel',
-  password: 'tam024685051',
-  port: 16876
+const client = mqtt.connect('soldier.cloudmqtt.com', {
+  username: '	uumiczri',
+  password: '4bF40hfXlXH6',
+  port: 13043
 });
 
 client.on('connect', function() { 
@@ -60,7 +60,7 @@ app.post('/webhook', async (req, res) => {
 
   const message = req.body.events[0].message.text;
   const reply_token = req.body.events[0].replyToken;
-  const TOKEN = `HeNOJnWy1GLWFZMU3Q/SR9+jAeM18+hBukabEQLuts+zzi4OkuNphFsb/eCDcVzC54bF22bjW+Zfr1kDjrpKsK3OJrlBY1qZYKyhInoWB7HL0bH+u/uRffNGER8i8qHcyfO3COACztFNNRcYf8Dx8QdB04t89/1O/w1cDnyilFU=`;
+  const TOKEN = `sBzunhVMVgT+ACb/gGCBEO2gjMFsudGLaF3ZXSAgXnLMsEkvN393Jb9Fs7kJ4O9s6aulil89P0svUj8xKho7w3s0803QXtMQkHUvFEALxYw7JaiXiMc7mJNoa2nt2CrjMx88vM1iUmgAaKO1kbBcugdB04t89/1O/w1cDnyilFU=`;
   const HEADERS = {
     'Content-Type': 'application/json',
     'Authorization': `Bearer ${TOKEN}`
