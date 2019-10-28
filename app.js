@@ -22,10 +22,10 @@ const db = admin.database();
 const ref = db.ref("temperature");
 
 // Create a client connection to CloudMQTT for live data
-const client = mqtt.connect('mqtt://m16.cloudmqtt.com', {
-  username: 'benzintel',
-  password: 'tam024685051',
-  port: 16876
+const client = mqtt.connect('mqtt://soldier.cloudmqtt.com', {
+  username: 'uumiczri',
+  password: 'r0eO9cCXUH8Ni',
+  port: 13043
 });
 
 client.on('connect', function() { 
