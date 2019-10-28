@@ -60,7 +60,7 @@ app.post('/webhook', async (req, res) => {
 
   const message = req.body.events[0].message.text;
   const reply_token = req.body.events[0].replyToken;
-  const TOKEN = `sBzunhVMVgT+ACb/gGCBEO2gjMFsudGLaF3ZXSAgXnLMsEkvN393Jb9Fs7kJ4O9s6aulil89P0svUj8xKho7w3s0803QXtMQkHUvFEALxYw7JaiXiMc7mJNoa2nt2CrjMx88vM1iUmgAaKO1kbBcugdB04t89/1O/w1cDnyilFU=`;
+  const TOKEN = `akW1W18sSq5Eajs6eE55c4lXvWkmQ0qZtrRBm6GyiuTgUcIjqbRChlT6z8JxEQUj6aulil89P0svUj8xKho7w3s0803QXtMQkHUvFEALxYzE/U+uxR+HHVsRefY4zavypG+2N45gwdZOn4yM3ff07QdB04t89/1O/w1cDnyilFU=`;
   const HEADERS = {
     'Content-Type': 'application/json',
     'Authorization': `Bearer ${TOKEN}`
